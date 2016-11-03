@@ -1,18 +1,32 @@
 
 function element(id){
-  var object = document.getElementById(id);
-  if (object == null) {
+  var obj = document.getElementById(id);
+  if (obj == null) {
     alert(id + " is null");
   }
-  return object;
+  return obj;
 }
 
-document.onLoad = function (){
+function showDiv(id) {
+  element(id).style.display = "block";
+}
 
-  element("tevora_btn").onClick = function () {
-    alert("hi");
-  }
+function hideDiv(id) {
+  element(id).style.display = "none";
+}
+
+function positionDiv(id, left, top) {
+  var div = element(id);
+  div.style.position = "absolute";
+  div.style.left = left + "px";
+  div.style.top = top + "px";
+}
 
 
+
+function initializePage (){
 
 }
+
+
+/* onclick, onchange, onkeypress, onkeyrelease, */
