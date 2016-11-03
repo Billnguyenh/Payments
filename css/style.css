@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+
+}
+
+.header {
+  width: 100%;
+  background-color: #333;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.nav li{
+  color: #fff;
+  display: inline;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+
+.main-content {
+
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-weight:bolder;
+  margin: 0 auto;
+  padding: 30px 30px;
+  text-align: center;
+}
+
+
+
+.summary {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.experience {
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.experience img {
+  width = 100%;
+  height = auto;
+  border-radius = 100%;
+}
+
+.involvements {
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+  padding: 50px 30px;
+}
+
+.footer {
+  border-top: 4px solid rgba(0, 0, 0, 0.5);
+  padding: 50px 30px;
+}
