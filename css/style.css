@@ -5,12 +5,9 @@ html, body {
   font-size: 1em;
   position:relative;
   background: #E7E7E7;
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(-0deg, #707070, #E7E7E7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(-0deg, #FEFEFE, #D0D0D0);
-  margin: 0;
-  padding: 0;
+  transition: .7s;
 }
 
 p {
@@ -31,47 +28,53 @@ h2 {
 
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-
+.main {
+  margin: 0px auto;
+  padding: 0;
 }
 
-.header {
-  width: 100%;
+.container {
+  margin: 0;
+  padding: 0;
   background-color: #222;
 }
 
-.nav {
+ul {
   list-style-type: none;
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
 }
 
-.nav li{
-  color: #fff;
-  display: inline;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  margin-right: 25px;
-  text-transform: uppercase;
+li {
+  float:left;
 }
 
-.portrait {
-  background-color: #333;
-  margin: 0px auto;
+li a {
   display: block;
-
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
-.portrait img {
+ul.nav li a:hover {
+  background-color: #444;
+}
+
+.intro {
+  background-color: #333;
+  margin: auto auto;
+}
+
+.intro img {
   width: 100%;
   height: auto;
-  max-width: 960px;
+  max-width: 600px;
   border-radius: 100%;
+  transition: .7s;
 }
 
 .name {
@@ -88,12 +91,14 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 30px;
-  border-top: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.summary-content {
+  padding: 0 30px;
 }
 
 .experience {
   max-width: 1200px;
-  border-top: 4px solid rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   padding: 30px 30px;
 }
@@ -104,16 +109,117 @@ h2 {
   max-width: 500px;
 }
 
+.job-title {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.experience p {
+  text-align: center;
+}
+
+#tevora,
+#miramontes,
+#readyforce {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#experience-divider-one,
+#experience-divider-two {
+  margin: 0 auto;
+  width: 90%;
+  border-top: 4px solid rgba(0, 0, 0, 0.4);
+}
+
 .involvements {
-  border-top: 4px solid rgba(0, 0, 0, 0.5);
   padding: 30px 30px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
-.footer {
+.involvements-content {
+  display: flex;
+  padding: 0px 30px;
+}
+
+#involvements-text {
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#uci-logo {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  padding: 30px 20px;
+}
+
+#uci-logo img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.involvements img{
+  width = 100%;
+  height = auto;
+  max-width: 300px;
+}
+
+.contact {
   max-width: 1200px;
-  border-top: 4px solid rgba(0, 0, 0, 0.5);
   padding: 30px 30px;
   margin: 0 auto;
+}
+
+.contact-content {
+  padding: 0px 30px;
+}
+
+@media screen and (max-width: 420px) {
+  ul.nav li:last-child {
+    display: none;
+  }
+  .summary-content {
+    padding: 0px 10px;
+  }
+  .involvements #uci-logo{
+    display: none;
+  }
+  .involvements #involvements-text {
+    width: 100%;
+  }
+  .involvmenents-content {
+    padding: 0px;
+  }
+  .contact-content {
+    padding: 0px 10px;
+  }
+}
+
+
+@media screen and (max-width: 720px){
+  .involvements #uci-logo {
+    display: none;
+  }
+  .involvements #involvements-text {
+    width: 100%;
+  }
+  .involvmenents-content {
+    padding: 0px;
+  }
+  .contact-content {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .intro img {
+    max-width: 850px;
+  }
+  body {
+    font-size: 1.2em;
+  }
 }
