@@ -1,17 +1,30 @@
+<!-- Table of Contents
+    1. Navigation Bar
+    2. Intro: Portrait and name
+    3. Summary
+    4. Experience section
+    5. Involvements section
+    6. Contact section
+-->
+
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Bill Nguyens Portfolio</title>
-
     <meta name="author" content="Bill Nguyen">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato" rel="stylesheet">
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">google.load("jquery", "2.2.4");</script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/myScript.js"></script>
   </head>
 
-  <body onload = "main();">
+  <body>
+
     <div class="main-grid">
 
+      <!--1.NAVIGATION BAR-->
       <div class="nav-bar">
         <ul class="nav">
           <li><a href="#summary-section">Summary</a></li>
@@ -20,7 +33,7 @@
           <li><a href="#contact-section">Contact</a></li>
         </ul>
       </div>
-
+      <!--2.INTRO: PORTRAIT and NAME-->
       <div class="intro">
         <center id="portrait">
           <img src="img/portrait-small.jpg" srcset="img/portrait-medium.jpg 760w, img/portrait-large.jpg 1300w" alt="Face Portrait">
@@ -35,6 +48,7 @@
         </div>
       </div>
 
+      <!--3.SUMMARY-->
       <div class="summary" id="summary-section">
         <h2 class="section-title">Summary</h2>
         <div class="summary-content">
@@ -57,6 +71,7 @@
         </div>
       </div>
 
+      <!--4.EXPERIENCE-->
       <div class="experience" id="experience-section">
         <h2 class="section-title">Experience</h2>
         <div class="experience-content">
@@ -102,6 +117,7 @@
         </div>
       </div>
 
+      <!--5.INVOLVEMENTS-->
       <div class="involvements" id="involvements-section">
         <h2  class="section-title">Involvements</h2>
         <div class="involvements-content">
@@ -145,12 +161,14 @@
         </div>
       </div>
 
+      <!--6.CONTACT-->
       <div class="contact" id="contact-section">
         <h2 class="section-title">Contact</h2>
         <div class="contact-content">
           <p>Contact: BillNguyenH@gmail.com</p>
         </div>
       </div>
+
     </div>
   </body>
 

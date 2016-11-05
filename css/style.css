@@ -239,11 +239,17 @@ ul.nav li a:hover {
   .involvements #involvements-text {
     width: 100%;
   }
-  .involvmenents-content {
+  .involvements-content {
     padding: 0px;
   }
   .contact-content {
     padding: 0px 10px;
+  }
+  .job-description {
+    text-align: left;
+  }
+  .experience-content {
+    padding: 0px 0px;
   }
 }
 
