@@ -9,17 +9,17 @@ $(document).ready(function() {
   $("#experience-button").click(function() {
       $('html, body').animate({
           scrollTop: $(".experience").offset().top
-      }, 1000);
+      }, 1200);
   });
   $("#involvements-button").click(function() {
       $('html, body').animate({
-          scrollTop: $(".involvement").offset().top
-      }, 1000);
+          scrollTop: $(".involvements").offset().top
+      }, 1400);
   });
   $("#contact-button").click(function() {
       $('html, body').animate({
           scrollTop: $(".contact").offset().top
-      }, 1000);
+      }, 1600);
   });
 
 });
