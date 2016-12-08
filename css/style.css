@@ -30,14 +30,13 @@ p {
 
 .section-title {
   text-align: center;
-  background-color: rgb(20,20,20);
-  background-color: rgba(0,0,0,.7);
-  color: white;
-
+  color: black;
+  font-family: 'Varela Round', 'Helvetica', 'Arial', serif;
+  font-size: 2.5em;
 }
 
 .main-grid {
-  margin: 0px auto;
+  margin: 0px 0px;
   padding: 0;
 }
 
@@ -47,51 +46,88 @@ p {
 
 .nav-bar {
   margin: 0;
-  padding: 0;
+  padding: 0px auto;
   background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 
-ul {
+.nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #FFF;
+  display: inline-block;
 }
 
-li {
-  float:left;
+.nav li {
+  float: left;
+  font-weight: bolder;
 }
-
-li a {
+.nav li a {
   display: block;
   color: black;
   text-align: center;
   padding: 20px 10px;
   text-decoration: none;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 ul.nav li a:hover {
-  background-color: #444;
+  color: #CCC;
 }
 /*
 -----------2.5.INTRO: COVER PHOTO--------------
 */
 .cover-photo {
   width: 100%;
-  height: 2000px;
-  background-image: url('img/CityLandscape.jpg');
+  height: 100vh;
+  background-image: url('C:/Users/Jack/Desktop/Portfolio/img/CityLandscape.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 1.5;
+  font-family: 'Varela Round', 'Helvetica', 'Arial', serif;
 }
 
 .cover-photo h1 {
+  padding-top: 20vh;
   font-size: 4em;
   text-align: center;
+
 }
 
 .cover-photo h3 {
   font-size: 1.5em;
   text-align: center;
+  padding: 0 15px;
+}
+
+.cover-photo h3 span {
+  display: inline-block;
+  position: relative
+}
+
+.cover-photo h3 span:before,
+.cover-photo h3 span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  top: 10px;
+  width: 100px;
+}
+
+.cover-photo h3 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.cover-photo h3 span:after {
+  left: 100%;
+  margin-left: 15px;
 }
 
 /*
@@ -99,33 +135,29 @@ ul.nav li a:hover {
 */
 
 .intro {
-  background-color: #333;
+  background-color: #FFFFFF;
   margin: auto auto;
 }
 
 .intro img {
   width: 100%;
   height: auto;
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 100%;
   transition: .7s;
 }
 
-.name {
+.intro {
   font-weight:bolder;
-  color: white;
+  color: black;
   margin: 0 auto;
   padding: 5px 30px 30px 30px;
   text-align: center;
-  background-color: #333;
 }
 
-.name h1 {
-  text-align: center;
-  color: white;
-  font-size: 2.5em;
+.intro h1 {
+  font-size: 3em;
 }
-
 /*
 -----------4.SUMMARY--------------
 */
@@ -139,6 +171,7 @@ ul.nav li a:hover {
 .summary-content {
   padding: 30px 30px;
 }
+
 
 /*
 -----------5.EXPERIENCE--------------
@@ -246,6 +279,9 @@ ul.nav li a:hover {
   ul.nav li:last-child {
     display: none;
   }
+  .nav-bar {
+    position: relative;
+  }
   .summary-content {
     padding: 0px 10px;
   }
@@ -267,6 +303,7 @@ ul.nav li a:hover {
   .experience-content {
     padding: 0px 0px;
   }
+
 }
 
 
@@ -285,11 +322,14 @@ ul.nav li a:hover {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .intro img {
-    max-width: 600px;
+    max-width: 500px;
   }
   body {
     font-size: 1.2em;
+  }
+  .cover-photo {
+    height: 140vh;
   }
 }
