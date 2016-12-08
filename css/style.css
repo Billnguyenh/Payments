@@ -124,7 +124,7 @@ ul.demo li a:hover {
 .cover-photo {
   width: 100%;
   height: 100vh;
-  background-image: url('background-images/CityLandscape.jpg');
+  background-image: url('CityLandscape.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   transition: 1.5;
