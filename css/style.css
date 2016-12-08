@@ -246,7 +246,7 @@ ul.demo li a:hover {
 }
 
 .job-description {
-  text-align: center;
+  text-align: justify;
 }
 
 #tevora,
@@ -288,6 +288,7 @@ ul.demo li a:hover {
   width: 70%;
   max-width: 700px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 #uci-logo {
