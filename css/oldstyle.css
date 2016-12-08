@@ -1,7 +1,6 @@
 /* Table of Contents
     1. Global
     2. Navigation Bar
-    2.5. Intro: Cover Photo
     3. Intro: Portrait and name
     4. Summary
     5. Experience section
@@ -20,7 +19,9 @@ html, body {
   font-family: 'Lato', "Helvetica", "Arial", sans-serif;
   font-size: 1em;
   position:relative;
-  background: #FFFFFF;
+  background: #E7E7E7;
+  background: -webkit-linear-gradient(-0deg, #707070, #E7E7E7);
+  background: linear-gradient(-0deg, #FEFEFE, #D0D0D0);
   transition: .7s;
 }
 
@@ -28,46 +29,17 @@ p {
   line-height: 1.5em;
 }
 
-.main-grid {
-  margin: 0px 0px;
-  padding: 0;
-}
-
 .section-title {
   text-align: center;
-  color: black;
-  font-family: 'Varela Round', 'Helvetica', 'Arial', serif;
-  font-size: 3em;
-  position: relative;
-  font-weight:bolder;
+  background-color: rgb(20,20,20);
+  background-color: rgba(0,0,0,.7);
+  color: white;
+
 }
 
-.section-title span {
-  display: inline-block;
-  position: relative;
-  z-index: 4;
-}
-
-.section-title span:before,
-.section-title span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 4px solid black;
-  border-top: 4px solid black;
-  top: 23px;
-  width: 100px;
-  z-index: 4;
-}
-
-.section-title span:before {
-  right: 100%;
-  margin-right: 25px;
-}
-
-.section-title span:after {
-  left: 100%;
-  margin-left: 25px;
+.main-grid {
+  margin: 0px auto;
+  padding: 0;
 }
 
 /*
@@ -76,100 +48,33 @@ p {
 
 .nav-bar {
   margin: 0;
-  padding: 0px auto;
-  background-color: #FFFFFF;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-  display: inline-block;
-
+  padding: 0;
+  background-color: #222;
 }
 
-.nav,
-.demo {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #FFF;
+  overflow: hidden;
+  background-color: #222;
 }
 
-.nav li {
-  float: left;
-  font-weight: bolder;
+li {
+  float:left;
 }
 
-.demo li {
-  float: right;
-  font-weight:bolder;
-}
-
-.nav li a,
-.demo li a {
+li a {
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 20px 10px;
   text-decoration: none;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 
-ul.nav li a:hover,
-ul.demo li a:hover {
-  color: #CCC;
-}
-/*
------------2.5.INTRO: COVER PHOTO--------------
-*/
-.cover-photo {
-  width: 100%;
-  height: 100vh;
-  background-image: url('CityLandscape.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 1.5;
-  font-family: 'Varela Round', 'Helvetica', 'Arial', serif;
-}
-
-.cover-photo h1 {
-  padding-top: 20vh;
-  font-size: 4em;
-  text-align: center;
-
-}
-
-.cover-photo h3 {
-  font-size: 1.5em;
-  text-align: center;
-  padding: 0 15px;
-}
-
-.cover-photo h3 span {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-
-.cover-photo h3 span:before,
-.cover-photo h3 span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  top: 10px;
-  width: 100px;
-  z-index: 3;
-}
-
-.cover-photo h3 span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-
-.cover-photo h3 span:after {
-  left: 100%;
-  margin-left: 15px;
+ul.nav li a:hover {
+  background-color: #444;
 }
 
 /*
@@ -177,30 +82,31 @@ ul.demo li a:hover {
 */
 
 .intro {
-  background-color: #FFFFFF;
+  background-color: #333;
   margin: auto auto;
-}
-
-#intro-subtitle {
-  font-size: 1.5em;
-  color: #005e80;
 }
 
 .intro img {
   width: 100%;
   height: auto;
-  max-width: 350px;
+  max-width: 600px;
   border-radius: 100%;
   transition: .7s;
-  padding: 30px 0px;
 }
 
-.intro {
+.name {
   font-weight:bolder;
-  color: black;
+  color: white;
   margin: 0 auto;
   padding: 5px 30px 30px 30px;
   text-align: center;
+  background-color: #333;
+}
+
+.name h1 {
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
 }
 
 /*
@@ -208,7 +114,7 @@ ul.demo li a:hover {
 */
 
 .summary {
-  max-width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px 30px;
 }
@@ -216,7 +122,6 @@ ul.demo li a:hover {
 .summary-content {
   padding: 30px 30px;
 }
-
 
 /*
 -----------5.EXPERIENCE--------------
@@ -226,7 +131,6 @@ ul.demo li a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 30px;
-  max-width: 70%;
 }
 
 .experience-content {
@@ -236,12 +140,12 @@ ul.demo li a:hover {
 .experience img {
   width: 100%;
   height: auto;
-  max-width: 350px;
+  max-width: 500px;
 }
 
 .job-title {
   font-weight: bolder;
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center;
 }
 
@@ -263,12 +167,6 @@ ul.demo li a:hover {
   border-top: 4px solid rgba(0, 0, 0, 0.4);
 }
 
-.time-stayed {
-  color: #005e80;
-  font-weight: bold;
-  text-align: center;
-}
-
 /*
 -----------6.INVOLVEMENTS--------------
 */
@@ -276,7 +174,7 @@ ul.demo li a:hover {
 .involvements {
   padding: 30px 30px;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 1200px;
 }
 
 .involvements-content {
@@ -309,11 +207,6 @@ ul.demo li a:hover {
   max-width: 300px;
 }
 
-.involvement-title {
-  color: #005e80;
-  font-weight: bolder;
-}
-
 /*
 -----------7.CONTACT--------------
 */
@@ -328,33 +221,16 @@ ul.demo li a:hover {
   padding: 0px 30px;
 }
 
-.contact-content p {
-  color: #005e80;
-  font-weight: bolder;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-#linkedin-button {
-  max-width: 100px;
-}
-
 /*
 -----------8.RESPONSIVE--------------
 */
 
 @media screen and (max-width: 420px) {
-  ul.nav li:last-child{
+  ul.nav li:last-child {
     display: none;
-  }
-  .nav-bar {
-    position: relative;
   }
   .summary-content {
     padding: 0px 10px;
-  }
-  .experience, .summary {
-    max-width: 100%;
   }
   .involvements #uci-logo{
     display: none;
@@ -374,13 +250,8 @@ ul.demo li a:hover {
   .experience-content {
     padding: 0px 0px;
   }
+}
 
-}
-@media screen and (max-width: 570px){
-  ul.demo {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 720px){
   .involvements #uci-logo {
@@ -397,15 +268,11 @@ ul.demo li a:hover {
   }
 }
 
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .intro img {
-    max-width: 500px;
+    max-width: 850px;
   }
   body {
     font-size: 1.2em;
-  }
-  .cover-photo {
-    height: 140vh;
   }
 }
